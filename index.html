@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Product preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/dist/index.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Article Start -->
+    <article
+      class="flex items-center justify-center h-screen gap-8 bg-[var(--primary-bg-color)]"
+      role="main"
+      aria-label="Product Preview Card Component"
+      tabindex="0"
+    >
+      <div
+        class="bg-white flex flex-col md:flex-row gap-4 rounded-[10px] overflow-hidden mx-2 md:mx-0 shadow-sm"
+        role="region"
+        aria-label="Product Details"
+      >
+        <!-- Left Side of Article Start  -->
+        <div class="w-full md:w-[305px]">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="../images/image-product-mobile.jpg"
+            />
+            <img
+              src="../images/image-product-desktop.jpg"
+              alt="Gabrielle Essence Eau De Parfum"
+              role="img"
+              aria-label="Gabrielle Essence Eau De Parfum"
+              class="w-full md:w-0"
+            />
+          </picture>
+        </div>
+        <!-- Left Side of Article End  -->
+
+        <!-- Right Side of  Content Start -->
+        <div
+          class="w-full md:w-[290px] py-8 px-4 md:pt-8 md:pb-0 md:pr-0 md:pl-4"
+          role="complementary"
+          aria-label="Product Information"
+        >
+          <div class="md:pr-8">
+            <h2
+              class="text-[0.8rem] uppercase text-[var(--para-text-color)] tracking-[0.5em] font-semibold"
+              tabindex="-1"
+            >
+              perfume
+            </h2>
+
+            <h1 class="text-[2.1rem] font-bold mt-5">
+              Gabrielle Essence Eau De Parfum
+            </h1>
+
+            <p
+              class="text-[0.9rem] text-[var(--para-text-color)] mt-6 leading-6 font-medium pr-6 md:pr-0"
+            >
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+
+            <div class="flex gap-5 mt-7 items-center">
+              <p
+                class="original-price text-[var(--btn-bg-color)] text-[2rem]"
+                aria-label="Original Price: $149.99"
+              >
+                $149.99
+              </p>
+              <p
+                class="text-[var(--para-text-color)] line-through text-[0.8rem]"
+                aria-label="Discounted Price: $169.99"
+              >
+                $169.99
+              </p>
+            </div>
+
+            <div>
+              <a
+                href="#"
+                class="bg-[var(--btn-bg-color)] text-white mt-7 rounded-[8px] py-4 text-center w-full transition-all hover:bg-[var(--btn-hover-color)] text-[15px] flex items-center justify-center gap-3 font-medium"
+                role="button"
+                aria-label="Add to Cart Button"
+              >
+                <img
+                  src="../images/icon-cart.svg"
+                  alt="Cart Icon"
+                  class="text-[0.96rem]"
+                  role="img"
+                  aria-label="Cart Icon"
+                />
+                Add to Cart
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Right Side of  Content End -->
+      </div>
+    </article>
+    <!-- Article End -->
+  </body>
+</html>
